@@ -1,4 +1,6 @@
-export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:/usr/local/bin:$PATH
+export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export JAVA_HOME=`/usr/libexec/java_home`
 
 export ZSH="$HOME/.oh-my-zsh"
@@ -10,11 +12,17 @@ SAVEHIST=10000
 
 alias ls='ls -a'
 alias vim='nvim'
-alias yt-dl='youtube-dl'
-alias yt-dl-m='youtube-dl --extract-audio'
-
+alias vi='nvim'
+alias v='nvim'
+alias yt-dl="youtube-dl"
+alias yt-dl-m="youtube-dl --extract-audio"
+alias rm="rm -i"
+alias pipesbig="pipes.sh -p 5 -r 6000 -R"
+alias pipes="pipes.sh -p 5 -r 1500 -R"
 alias x+="chmod +x"
-
+alias dir="ls"
+alias cls="clear"
+alias nfetch="neofetch"
 alias ..="cd .."
 alias cd..="cd .."
 alias ...="cd ../.."
