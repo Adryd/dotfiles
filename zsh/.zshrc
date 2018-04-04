@@ -1,19 +1,21 @@
 export PATH=$HOME/bin:/usr/local/bin:/usr/local/bin:$PATH
 export PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
+export PATH="$HOME/Library/Python/3.6/bin:$PATH"
 export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 export JAVA_HOME=`/usr/libexec/java_home`
 
 export ZSH="$HOME/.oh-my-zsh"
 
-export EDITOR='nvim'
+export EDITOR='vim'
 
 HISTSIZE=10000
 SAVEHIST=10000
 
-alias ls='ls -a'
-alias vim='nvim'
-alias vi='nvim'
-alias v='nvim'
+alias ls='ls -a --color'
+alias emacs='vim'
+alias nvim='vim'
+alias vi='vim'
+alias v='vim'
 alias yt-dl="youtube-dl"
 alias yt-dl-m="youtube-dl --extract-audio"
 alias rm="rm -i"
@@ -45,4 +47,9 @@ plugins=(
   git
 )
 
-source $ZSH/oh-my-zsh.sh
+#source $ZSH/oh-my-zsh.sh
+#source ~/Library/Python/3.6/lib/site-packages/powerline/bindings/zsh/powerline.zsh
+source $HOME/Library/Python/3.6/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

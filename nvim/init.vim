@@ -16,6 +16,9 @@ set undofile
 set undodir=$HOME/.config/nvim/undo
 set undolevels=1000
 set undoreload=10000
+let g:powerline_pycmd = 'py3'
+let g:powerline_pyeval = 'py3eval'
+
 
 call plug#begin('~/.config/nvim/plug')
 
@@ -26,23 +29,35 @@ let g:airline_powerline_fonts = 1
 Plug 'w0rp/ale'
 
 " aesthetics
-Plug 'Adryd/vim-monokai/'
+Plug 'Adryd/vim-adryd-monokai'
 Plug 'Dru89/vim-adventurous'
-Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline'
 
 " language support
 Plug 'rust-lang/rust.vim'
 Plug 'fatih/vim-go'
 "Plug 'othree/yajs.vim'
 Plug 'pangloss/vim-javascript'
-"Plug 'othree/yajs.vim' 
-"Plug 'aothree/es.next.syntax.vim'
-"Plug 'jelera/vim-javascript-syntax'
 
 
 Plug 'rakr/vim-one' 
-Plug 'scrooloose/nerdtree'
+"Plug 'scrooloose/nerdtree'
 call plug#end()
+
+
+py3 import sys
+
+
+" Always show statusline
+set laststatus=2
+
+" Use 256 colours (Use this setting only if your terminal supports 256 colours)
+set t_Co=256
+
+set rtp+=$HOME/Library/Python/3.6/lib/python/site-packages/powerline/bindings/vim
+
+let g:powerline_pycmd = 'py3'
+let g:powerline_pyeval = 'py3eval'
 
 set termguicolors
 set background=dark
