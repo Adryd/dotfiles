@@ -1,0 +1,10 @@
+.DS_Store
+._.DS_Store
+**/.DS_Store
+**/._.DS_Store
+
+.zsh/fuckery.zsh
+.zsh/personal.zsh
+
+/private
+/private/**
