@@ -1,0 +1,23 @@
+{
+    "PragmataPro": {
+       "horizontalSpacing": 1,
+       "verticalSpacing": 1,
+       "normalFont": "PragmataPro 15",
+       "nonAsciiFont": "PragmataPro 15",
+       "useNonAsciiFont": false
+    },
+    "Roboto": {
+       "horizontalSpacing": 1,
+       "verticalSpacing": 0.87,
+       "normalFont": "RobotoMono-Regular 14",
+       "nonAsciiFont": "PragmataPro 15",
+       "useNonAsciiFont": true
+    },
+    "Ubuntu": {
+       "horizontalSpacing": 0.9,
+       "verticalSpacing": 1,
+       "normalFont": "UbuntuMono-Regular 16",
+       "nonAsciiFont": "PragmataPro 14",
+       "useNonAsciiFont": true
+    }
+ }
