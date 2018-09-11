@@ -16,3 +16,4 @@ alias ..="cd .."
 alias cd..="cd .."
 alias cask="brew cask"
 
+alias update="cd ~; brew upgrade; cask upgrade; npm upgrade -g"
