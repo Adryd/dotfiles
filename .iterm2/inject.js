@@ -3,12 +3,14 @@ module.exports = {
         /*for (color in constants.colorValuesMap) {
             writeEsc(1337, `SetColors=${constants.colorValuesMap[color]}=${colors[color].hex}`)
         }*/ //disabled as a temporary fix for https://github.com/Adryd/dotfiles/issues/1
-        if (colors['Background Color']) {
+        /*if (colors['Background Color']) {
             // Not working in macos 10.13, will work in 10.14
             writeEsc("6;1;bg;red;brightness", `${colors['Background Color'].r}`)
             writeEsc("6;1;bg;green;brightness", `${colors['Background Color'].g}`)
             writeEsc("6;1;bg;blue;brightness", `${colors['Background Color'].b}`)
-        }
+        }*/
+
+        // whole program causes problems, will deal with this later
     }
 }
 
