@@ -1,8 +1,8 @@
 module.exports = {
     inject: (colors, constants) => {
-        for (color in constants.colorValuesMap) {
+        /*for (color in constants.colorValuesMap) {
             writeEsc(1337, `SetColors=${constants.colorValuesMap[color]}=${colors[color].hex}`)
-        }
+        }*/ //disabled as a temporary fix for https://github.com/Adryd/dotfiles/issues/1
         if (colors['Background Color']) {
             // Not working in macos 10.13, will work in 10.14
             writeEsc("6;1;bg;red;brightness", `${colors['Background Color'].r}`)

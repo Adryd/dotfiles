@@ -1,4 +1,7 @@
 {
+
+    "Name" : "Adryd - Dynamic",
+    "Guid" : "ba19744f-6af3-434d-aaa6-0a48e0969958",
     "Tags" : [
   
     ],
@@ -15,6 +18,10 @@
       "slogin",
       "telnet"
     ],
+    "Show Status Bar" : false,
+    "Bound Hosts" : [
+  
+    ],
     "Working Directory" : "\/Users\/adryd",
     "Blinking Cursor" : false,
     "Disable Window Resizing" : true,
@@ -22,11 +29,11 @@
     "Use Cursor Guide": false,
     "Prompt Before Closing 2" : false,
     "BM Growl" : true,
-    "Command" : "zsh",
+    "Command" : "\/usr\/local\/bin\/zsh",
     "Description" : "Default",
+    "Space" : 0,
     "Mouse Reporting" : true,
     "Screen" : -1,
-    "Only The Default BG Color Uses Transparency" : false,
     "Columns" : 80,
     "Idle Code" : 0,
     "Custom Command" : "No",
@@ -198,10 +205,7 @@
         "Action" : 10
       }
     },
-    "Window Type" : 0,
-    "Blur Radius" : 30,
-    "Cursor Boost" : 0,
-    "Background Image Location" : "",
+    "Window Type" : 13,
     "Blur" : false,
     "Scrollback Lines" : 1000,
     "Send Code When Idle" : false,
@@ -210,10 +214,9 @@
     "Visual Bell" : true,
     "Flashing Bell" : false,
     "Silence Bell" : false,
-    "ASCII Ligatures" : true,
-    "Name" : "Adryd - Dynamic",
+    "Open Toolbelt" : false,
     "Shortcut" : "",
     "Custom Directory" : "No",
     "Transparency" : 0,
-    "Guid" : "ba19744f-6af3-434d-aaa6-0a48e0969958"
+    "Use Non-ASCII Font" : true
   }
