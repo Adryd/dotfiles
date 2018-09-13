@@ -19,13 +19,14 @@ set backspace=indent,eol,start
 set nocompatible
 filetype off
 
-set rtp+=~/.ashell/.vim/bundle/Vundle.vim
+set rtp+=~/.ashell/vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'noahfrederick/vim-noctu'
 Plugin 'vim-airline/vim-airline-themes'
+
 
 call vundle#end()
 filetype plugin indent on

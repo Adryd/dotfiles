@@ -17,7 +17,7 @@ if [[ $1 == "prefix" ]]; then
 elif [[ $1 == "noc_test" ]]; then
     echo $(noc_test)
 elif [[ $1 == "uptime" ]]; then
-    echo "$UPTIME $(uptime | awk '$3 == $3 {print $3}' | sed 's/,//')"
+    echo "$UPTIME $(uptime | awk '$3 == $3 {print $3}' | sed 's/,//') days"
 elif [[ $1 == "battery" ]]; then
     if [[ $(pmset -g batt | grep -o -E 'discharging') == 'discharging' ]]; then 
         printf $BATTERY; 

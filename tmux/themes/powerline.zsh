@@ -56,19 +56,25 @@ prompt_segment() {
 }
 
 status_right() {
-    prompt_segment r colour236 colour255 "$($ADRYDDOTFILES/.tmux/segments.zsh uptime)"
-    prompt_segment r colour236 colour255 "$($ADRYDDOTFILES/.tmux/segments.zsh battery)"
-    prompt_segment r colour239 colour255 "$($ADRYDDOTFILES/.tmux/segments.zsh date)"
-    prompt_segment r colour239 colour255 "$($ADRYDDOTFILES/.tmux/segments.zsh time)"
+    prompt_segment r colour236 colour255 "$($ADRYDDOTFILES/tmux/segments.zsh uptime)"
+    prompt_segment r colour236 colour255 "$($ADRYDDOTFILES/tmux/segments.zsh battery)"
+    prompt_segment r colour239 colour255 "$($ADRYDDOTFILES/tmux/segments.zsh date)"
+    prompt_segment r colour239 colour255 "$($ADRYDDOTFILES/tmux/segments.zsh time)"
     prompt_segment r colour255 colour1 "#[bold]$($ADRYDDOTFILES/.tmux/segments.zsh hostname)"
 }
 status_left() {
-    prompt_segment l colour2 colour0 "#[bold]$($ADRYDDOTFILES/.tmux/segments.zsh prefix)"
-    prompt_segment l colour1 colour15 "#[bold]$($ADRYDDOTFILES/.tmux/segments.zsh noc_test)"
+    if [[ $1 == "prefix" ]]; then
+        echo $(prefix)
+    elif [[ $1 == "noc_test" ]]; then
+        echo $(noc_test)
+    prompt_segment l colour2 colour0 "#[bold]$($ADRYDDOTFILES/tmux/segments.zsh prefix)"
+    prompt_segment l colour1 colour15 "#[bold]$($ADRYDDOTFILES/tmux/segments.zsh noc_test)"
     prompt_segment l end
 }
 #window_status_format() {}
 #window_current_format() {}
+
+
 
 
 

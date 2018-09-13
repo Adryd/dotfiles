@@ -1,7 +1,7 @@
 resettheme() {
   prompt $PROMPTTYPE
   echo "FONT=\"${FONT}\";COLORS=\"${COLORS}\";PROMPTTYPE=\"${PROMPTTYPE}\";" >! ~/.ashell/theme_settings.zsh
-  node $ADRYDDOTFILES/.iterm2/main.js
+  node $ADRYDDOTFILES/iterm2/main.js
 }
 
 
@@ -39,19 +39,19 @@ color() {
 prompt() {
   if [[ $1 == "basic" || $1 == "1" ]]; then
     PROMPTTYPE="basic"
-    source "${ADRYDDOTFILES}/.zsh/themes/basic.zsh-theme"
+    source "${ADRYDDOTFILES}/zsh/themes/basic.zsh-theme"
   elif [[ $1 == "lite" || $1 == "2" ]]; then
     PROMPTTYPE="lite"
-    source "${ADRYDDOTFILES}/.zsh/themes/minimal.zsh-theme"
+    source "${ADRYDDOTFILES}/zsh/themes/minimal.zsh-theme"
   elif [[ $1 == "ghost" || $1 == "3" ]]; then
     PROMPTTYPE="ghost"
-    source "${ADRYDDOTFILES}/.zsh/themes/ghost.zsh-theme"
+    source "${ADRYDDOTFILES}/zsh/themes/ghost.zsh-theme"
   elif [[ $1 == "minimalist" || $1 == "4" ]]; then
     PROMPTTYPE="minimal"
-    source "${ADRYDDOTFILES}/.zsh/themes/extralight.zsh-theme"
+    source "${ADRYDDOTFILES}/zsh/themes/extralight.zsh-theme"
   else
     PROMPTTYPE="powerline"
-    source "${ADRYDDOTFILES}/.zsh/themes/agnoster-adryd.zsh-theme"
+    source "${ADRYDDOTFILES}/zsh/themes/agnoster-adryd.zsh-theme"
   fi
   echo "FONT=\"${FONT}\";COLORS=\"${COLORS}\";PROMPTTYPE=\"${PROMPTTYPE}\";" >! ~/.ashell/theme_settings.zsh
 }
