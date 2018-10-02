@@ -23,8 +23,15 @@ set rtp+=~/.ashell/vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
+
+
 Plugin 'vim-airline/vim-airline'
-Plugin 'noahfrederick/vim-noctu'
+Plugin 'scrooloose/nerdtree'
+
+Plugin 'pangloss/vim-javascript'
+Plugin 'othree/yajs.vim'
+
+Plugin 'adryd/vim-adryd-monokai'
 Plugin 'vim-airline/vim-airline-themes'
 
 
@@ -49,7 +56,19 @@ cnoreabbrev W w
 cnoreabbrev Wq wq
 cnoreabbrev Qa qa
 
+
+" truecolor in tmux
+let &t_8f="\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b="\<Esc>[48;2;%lu;%lu;%lum"
+
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 
-let g:airline_theme = 'base16color'
+set termguicolors
+set background=dark
+let g:gruvbox_italic=1
+
+let g:airline_theme='base16color'
+syntax on
+colorscheme one
+

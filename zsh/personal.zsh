@@ -98,33 +98,18 @@ phant() {
     echo  "$P      ████    ████                "
     echo  ""
 }
-phantM() {
-    
-    echo -e ""
-    echo -e "\e[31m         MMMMMMMM    MMMMMMM      "
-    echo -e "\e[31m    MMMMMMMMMMMMMMMMMMMMMM  MM    "
-    echo -e "\e[31m    MMMMMMMMMMMMMMMMMMMMMMMMMM    "
-    echo -e "\e[31m  MMMMMMMMMMMMMMMMMMMMMMMMMMMMMM  "
-    echo -e "\e[31m  MMMMMMMMMMMMMMMMMMMMMM\e[39mMM\e[31m  MMMM  "
-    echo -e "\e[31m  MMMMMMMMMMMMMMMMMMMM  \e[39mMM\e[31m    MM  "
-    echo -e "\e[31m  MMMMMMMMMMMMMMMMMMMM    \e[39mMM\e[31m  MM  "
-    echo -e "\e[31m  MM  MMMMMMMMMMMM            MM  "
-    echo -e "\e[31m      MMMM    MMMM          MM    "
-    echo -e "\e[31m      MMMM    MMMM                "
-    echo  ""
-}
 
-traa() {
-    echo ""
-    echo  "\e[34m███████████████████████████████████"
-    echo  "\e[34m███████████████████████████████████"
-    echo  "\e[31m███████████████████████████████████"
-    echo  "\e[31m███████████████████████████████████"
-    echo  "\e[39m███████████████████████████████████"
-    echo  "\e[39m███████████████████████████████████"
-    echo  "\e[31m███████████████████████████████████"
-    echo  "\e[31m███████████████████████████████████"
-    echo  "\e[34m███████████████████████████████████"
-    echo  "\e[34m███████████████████████████████████"
-    echo  ""
+
+phant2() {
+    P="\\e[$(( ( RANDOM % 6 )  + 31 ))m"
+    echo
+    echo  "$P              ██████"
+    echo  "$P              ██  ██"
+    echo  "$P  ██████████████████"
+    echo  "$P    ████████████  ██"
+    echo  "$P    ████████████  ██"
+    echo  "$P    ████████████  ██"
+    echo  "$P      ██    ██"
+    echo  "$P      ██    ██"
+    echo
 }

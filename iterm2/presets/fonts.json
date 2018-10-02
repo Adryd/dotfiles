@@ -1,0 +1,37 @@
+{
+    "pragmataPro": {
+       "horizontalSpacing": 1,
+       "verticalSpacing": 1,
+       "normalFont": "PragmataProLiga 15",
+       "nonAsciiFont": "PragmataProLiga 15",
+       "useNonAsciiFont": false
+    },
+    "roboto": {
+       "horizontalSpacing": 1,
+       "verticalSpacing": 0.87,
+       "normalFont": "RobotoMono-Regular 14",
+       "nonAsciiFont": "PragmataPro 15",
+       "useNonAsciiFont": true
+    },
+    "ubuntu": {
+       "horizontalSpacing": 0.9,
+       "verticalSpacing": 1,
+       "normalFont": "UbuntuMono-Regular 16",
+       "nonAsciiFont": "PragmataPro 14",
+       "useNonAsciiFont": true
+    },
+    "monaco": {
+       "horizontalSpacing": 1,
+       "verticalSpacing": 1,
+       "normalFont": "Monaco 12",
+       "nonAsciiFont": "PragmataPro 14",
+       "useNonAsciiFont": true
+    },
+    "vga": {
+        "horizontalSpacing": 1,
+        "verticalSpacing" : 0.9,
+        "normalFont" : "MorePerfectDOSVGA 16",
+        "nonAsciiFont" : "PragmataPro 13",
+        "useNonAsciiFont": true
+    }
+ }

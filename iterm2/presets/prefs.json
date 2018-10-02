@@ -1,0 +1,11 @@
+{
+    "default": {
+        "Blinking Cursor": false,
+        "Cursor Type" : 2
+    },
+    "vga": {
+        "Blinking Cursor": true,
+        "Cursor Type" : 0
+    }
+ }
+

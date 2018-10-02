@@ -1,3 +1,4 @@
+
 const fs = require('fs')
 const os = require('os')
 const path = require('path')
@@ -6,8 +7,17 @@ module.exports = {
     generate: generate
 }
 
-function generate(colors, fonts, constants) {
-    var newConfig = require("./config-template.json");
+function generate(colors, fonts, prefs, constants) {
+    let newConfig = require("./profiles/default.json")    
+    let baseConfig = require("./profiles/configBase.json")
+    let keybinds = require("./profiles/keybinds.json")
+
+    for (pref in baseConfig) {
+        newConfig[pref] = baseConfig[pref]
+    }
+
+    delete newConfig["Keyboard Map"]
+    newConfig["Keyboard Map"] = keybinds["Keyboard Map"]
 
     // Push fonts to config
     newConfig["Horizontal Spacing"] = fonts.horizontalSpacing
@@ -15,6 +25,7 @@ function generate(colors, fonts, constants) {
     newConfig["Normal Font"] = fonts.normalFont
     newConfig["Non Ascii Font"] = fonts.nonAsciiFont
     newConfig["Use Non-ASCII Font"] = fonts.useNonAsciiFont
+
 
     for (i in colors) { 
         // This will create useless values but it doesn't matter, we can ignore them, dealing with them would take too much time
@@ -33,7 +44,12 @@ function generate(colors, fonts, constants) {
             'Blue Component': colors[i].b / 255
         }
     }
-    // To be written to file
+
+    for (pref in prefs) {
+        newConfig[pref] = prefs[pref]
+    }
+
+   // To be written to file
     let w2f = {
         "Profiles": [newConfig]
     }
@@ -45,4 +61,3 @@ function generate(colors, fonts, constants) {
         }
     });
 }
-

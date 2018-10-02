@@ -5,7 +5,13 @@ LEFT_DEVIDER_LITE=""
 RIGHT_DEVIDER=""
 RIGHT_DEVIDER_LITE=""
 
+    prefix() {
+        echo "#{?client_prefix,PREFIX,NORMAL}"
+    }
 
+    noc_test() {
+        echo "#{?pane_in_mode,COPY,INSERT}"
+    }
 
 CURRENT_BG="NONE"
 DEFAULT_BG="colour234"
@@ -49,7 +55,7 @@ prompt_segment() {
         else
             SEGMENT="$SEGMENT#[fg=$2]$RIGHT_DEVIDER#[bg=$2,fg=$3]\x20" # IF NO PREVIOUS COLOR OR OTHER SITUATUION
         fi
-        echo $CURRENT_BG
+        #echo $CURRENT_BG
         CURRENT_BG=$2
         [[ -n $4 ]] && SEGMENT="$SEGMENT$4\x20"
     fi
@@ -60,13 +66,9 @@ status_right() {
     prompt_segment r colour236 colour255 "$($ADRYDDOTFILES/tmux/segments.zsh battery)"
     prompt_segment r colour239 colour255 "$($ADRYDDOTFILES/tmux/segments.zsh date)"
     prompt_segment r colour239 colour255 "$($ADRYDDOTFILES/tmux/segments.zsh time)"
-    prompt_segment r colour255 colour1 "#[bold]$($ADRYDDOTFILES/.tmux/segments.zsh hostname)"
+    prompt_segment r colour255 colour1 "#[bold]$($ADRYDDOTFILES/tmux/segments.zsh hostname)"
 }
 status_left() {
-    if [[ $1 == "prefix" ]]; then
-        echo $(prefix)
-    elif [[ $1 == "noc_test" ]]; then
-        echo $(noc_test)
     prompt_segment l colour2 colour0 "#[bold]$($ADRYDDOTFILES/tmux/segments.zsh prefix)"
     prompt_segment l colour1 colour15 "#[bold]$($ADRYDDOTFILES/tmux/segments.zsh noc_test)"
     prompt_segment l end

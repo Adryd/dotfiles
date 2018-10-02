@@ -221,13 +221,14 @@ prompt_status() {
 ## Main prompt
 build_prompt() {
   RETVAL=$?
-  prompt_segment 10 black "%{$fg_bold[black]%}INSERT%{$reset_color%b%}"
+  #prompt_segment 10 black "%{$fg_bold[black]%}INSERT%{$reset_color%b%}"
+  #prompt_segment 10 black ""
   # use 7 for a nice white is color
   prompt_context
   prompt_dir
   prompt_git
-  prompt_bzr
-  prompt_hg
+  #prompt_bzr
+  #prompt_hg
   prompt_status
   prompt_virtualenv
   prompt_end

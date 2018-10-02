@@ -1,1 +1,1 @@
-FONT="PragmataPro";COLORS="Monokai";PROMPTTYPE="powerline";
+FONT="pragmataPro";COLORS="monokai";PREFS="default";PROMPTTYPE="powerline";
