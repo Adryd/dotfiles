@@ -7,7 +7,8 @@ export MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_181.jdk/Contents/Home'
 # GraalVM
 export GRAALVM_HOME=~/.path/GraalVM/Contents/Home
-export PATH=$GRAALVM_HOME/bin:$PATH
+# fucks with node 
+#export PATH=$GRAALVM_HOME/bin:$PATH
 
 plugins=(
   git

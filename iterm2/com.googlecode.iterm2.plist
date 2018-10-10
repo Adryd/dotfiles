@@ -282,11 +282,11 @@ _NS:993</string>
 	<key>NSWindow Frame SessionsPreferences</key>
 	<string>335 98 606 469 0 0 1680 1050 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>622 323 770 420 0 0 1680 1027 </string>
+	<string>622 218 1016 512 0 0 1680 1027 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>127 443 592 584 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>842 273 640 465 0 0 1680 1027 </string>
+	<string>426 499 640 465 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>678 350 640 465 0 0 1680 1027 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -640,7 +640,7 @@ _NS:993</string>
 			<key>Blend</key>
 			<real>0.5</real>
 			<key>Blinking Cursor</key>
-			<true/>
+			<false/>
 			<key>Blur</key>
 			<false/>
 			<key>Blur Radius</key>
@@ -687,7 +687,7 @@ _NS:993</string>
 				<real>0.28235294117647058</real>
 			</dict>
 			<key>Cursor Type</key>
-			<integer>0</integer>
+			<integer>2</integer>
 			<key>Custom Command</key>
 			<string>No</string>
 			<key>Custom Directory</key>
@@ -1132,12 +1132,33 @@ _NS:993</string>
 					<key>Text</key>
 					<string>0x1f</string>
 				</dict>
+				<key>0x31-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>11</integer>
+					<key>Text</key>
+					<string>0x00 0x31</string>
+				</dict>
+				<key>0x32-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>11</integer>
+					<key>Text</key>
+					<string>0x00 0x32</string>
+				</dict>
 				<key>0x32-0x40000</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x00</string>
+				</dict>
+				<key>0x33-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>11</integer>
+					<key>Text</key>
+					<string>0x00 0x33</string>
 				</dict>
 				<key>0x33-0x40000</key>
 				<dict>
@@ -1146,12 +1167,26 @@ _NS:993</string>
 					<key>Text</key>
 					<string>0x1b</string>
 				</dict>
+				<key>0x34-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>11</integer>
+					<key>Text</key>
+					<string>0x00 0x34</string>
+				</dict>
 				<key>0x34-0x40000</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x1c</string>
+				</dict>
+				<key>0x35-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>11</integer>
+					<key>Text</key>
+					<string>0x00 0x35</string>
 				</dict>
 				<key>0x35-0x40000</key>
 				<dict>
@@ -1160,12 +1195,26 @@ _NS:993</string>
 					<key>Text</key>
 					<string>0x1d</string>
 				</dict>
+				<key>0x36-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>11</integer>
+					<key>Text</key>
+					<string>0x00 0x36</string>
+				</dict>
 				<key>0x36-0x40000</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x1e</string>
+				</dict>
+				<key>0x37-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>11</integer>
+					<key>Text</key>
+					<string>0x00 0x37</string>
 				</dict>
 				<key>0x37-0x40000</key>
 				<dict>
@@ -1174,12 +1223,47 @@ _NS:993</string>
 					<key>Text</key>
 					<string>0x1f</string>
 				</dict>
+				<key>0x38-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>11</integer>
+					<key>Text</key>
+					<string>0x00 0x38</string>
+				</dict>
 				<key>0x38-0x40000</key>
 				<dict>
 					<key>Action</key>
 					<integer>11</integer>
 					<key>Text</key>
 					<string>0x7f</string>
+				</dict>
+				<key>0x39-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>11</integer>
+					<key>Text</key>
+					<string>0x00 0x39</string>
+				</dict>
+				<key>0x5b-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>11</integer>
+					<key>Text</key>
+					<string>0x00 0x5B</string>
+				</dict>
+				<key>0x5d-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>11</integer>
+					<key>Text</key>
+					<string>0x00 0x5D</string>
+				</dict>
+				<key>0x74-0x100000</key>
+				<dict>
+					<key>Action</key>
+					<integer>11</integer>
+					<key>Text</key>
+					<string>0x00 0x63</string>
 				</dict>
 				<key>0xf700-0x220000</key>
 				<dict>
@@ -1931,7 +2015,7 @@ _NS:993</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2018-09-28T03:30:58Z</date>
+	<date>2018-10-03T16:11:22Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>Secure Input</key>

@@ -71,11 +71,7 @@ prompt() {
 }
 
 
-if [[ $TMUX ]]; then
-  echo -e -n "\033Ptmux;\033\033\033]1337;SetProfile=Adryd - Dynamic\007\033\\"
-else
-  echo -e -n "\033]50;SetProfile=Adryd - Dynamic\a"
-fi
+
 
 # TO BE DONE
 # Language: C or zsh 
