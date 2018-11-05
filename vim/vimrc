@@ -30,7 +30,7 @@ Plugin 'scrooloose/nerdtree'
 
 Plugin 'pangloss/vim-javascript'
 Plugin 'othree/yajs.vim'
-
+Plugin 'wakatime/vim-wakatime'
 Plugin 'adryd/vim-adryd-monokai'
 Plugin 'vim-airline/vim-airline-themes'
 

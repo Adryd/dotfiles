@@ -36,5 +36,13 @@
   "Default Bookmark": "No",
 
   "Sync Title": false,
-  "BM Growl": true
+  "BM Growl": true,
+
+  "Triggers" : [
+    {
+      "regex" : ".*",
+      "action" : "ScriptTrigger",
+      "parameter" : "wakatime --entity Terminal --entity-type app --plugin \"iterm2-wakatime\/0.0.1\" --project \"<<LAST_PROJECT>>\""
+    }
+  ]
 }

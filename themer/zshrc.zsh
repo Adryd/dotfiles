@@ -10,7 +10,11 @@ artheme_callback() {
     echo -e -n "$2"
 }
 
-alias artheme="node $ADRYDDOTFILES/themer/theme.js"
-# | artheme_callback
+artheme() {
+  node $ADRYDDOTFILES/themer/main.js $1 $2 $3 $4 $5 $6 $7 $8
+  source $ADRYDDOTFILES/themer/termvar
+}
+
+alias resettheme="artheme --sync"
 alias arprefs="node $ADRYDDOTFILES/themer/prefs.js"
 

@@ -24,7 +24,8 @@ SAVEHIST=10000
 EDITOR='vim'
 
 source "${ADRYDDOTFILES}/zsh/oh-my-zsh/oh-my-zsh.sh"
-
+ZSH_CUSTOM="${ADRYDDOTFILES}/zsh/plugins"
+plugins=(git wakatime)
 source "${ADRYDDOTFILES}/theme_settings_default.zsh"
 source "${ADRYDDOTFILES}/theme_settings.zsh"
 
@@ -32,16 +33,21 @@ source "${ADRYDDOTFILES}/zsh/aliases.zsh"
 source "${ADRYDDOTFILES}/misc/private/keys.zsh"
 source "${ADRYDDOTFILES}/zsh/personal.zsh"
 
-source "${ADRYDDOTFILES}/themes.zsh"
+#source "${ADRYDDOTFILES}/themes.zsh"
 source "${ADRYDDOTFILES}/zsh/fuckery.zsh"
 
 source "${ADRYDDOTFILES}/zsh/iterm2_shell_integration.zsh"
 
 alias rl='reset && source ~/.zshrc'
-alias sync='source ~/.ashell/theme_settings.zsh && resettheme'
+#alias sync='source ~/.ashell/theme_settings.zsh && resettheme'
+source "${ADRYDDOTFILES}/fuckery/phant.zsh"
 alias motd="phant"
 
-resettheme
+source "${ADRYDDOTFILES}/themer/zshrc.zsh"
+
+
+#resettheme
+
 
 segments="${ADRYDDOTFILES}/tmux/segments.zsh"
 motd

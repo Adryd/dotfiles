@@ -10,3 +10,4 @@ zsh/personal.zsh
 
 misc/private
 misc/private/*
+**/node_modules
