@@ -25,6 +25,11 @@ alias pipesbig="pipes.sh -p 5 -r 6000 -R"
 alias pipes="pipes.sh -p 5 -r 1500 -R"
 
 alias yt-dl="youtube-dl"
-alias yt-dl-mp3="youtube-dl --extract-audio"
+alias yt-dl-mp3="youtube-dl --extract-audio --audio-format mp3"
 
 alias update="cd ~; brew upgrade; cask upgrade; npm upgrade -g"
+
+tomp3() {
+  ffmpeg -i $1 -vn -ar 44100 -ac 2 -ab 192k -f mp3 $2
+}
+

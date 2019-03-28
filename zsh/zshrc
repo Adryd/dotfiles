@@ -48,6 +48,7 @@ source "${ADRYDDOTFILES}/themer/zshrc.zsh"
 
 #resettheme
 
+artheme
 
 segments="${ADRYDDOTFILES}/tmux/segments.zsh"
 motd
