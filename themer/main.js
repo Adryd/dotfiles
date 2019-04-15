@@ -44,6 +44,7 @@ switch (saveState) {
 
 const color = require('./modules/color.js')
 const font = require('./modules/font.js')
+const prompt = require('./modules/prompt.js')
 
 let vscode = require(path.join(os.homedir(), 'Library', 'Application Support', 'Code', 'User', 'settings.json'))
 const iterm2 = require('./iterm.js')
